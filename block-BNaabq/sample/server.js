@@ -4,17 +4,21 @@ let app = express();
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-app.use(logger('div'));
+app.use(logger('tiny'));
 app.use(cookieParser());
 
 app.use((req, res, next) => {
   console.log(req.cookies);
-  res.cookie('username', 'ravindra');
   next();
 });
 
-app.get('/about', (req, res) => {
-  res.send('complted');
+app.use('/about', (req, res, next) => {
+  res.cookie('username', 'ravindra');
+  res.end('About page');
+});
+
+app.get('/', (req, res) => {
+  res.send('completed');
 });
 
 app.listen(4000, () => {
