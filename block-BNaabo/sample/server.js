@@ -16,13 +16,16 @@ app.post('/json', (req, res) => {
 app.post('/contact', (req, res) => {
   console.log(req.body);
 });
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
 
-app.get('/images/img1.png', (req, res) => {
-  res.sendFile(__dirname + '/public' + '/assets' + req.url);
-});
-app.get('/style', (req, res) => {
-  res.sendFile(__dirname + '/public/' + req.url + '.css');
-});
+// app.get('/images/img1.png', (req, res) => {
+//   res.sendFile(__dirname + '/public' + '/assets' + req.url);
+// });
+// app.get('/style', (req, res) => {
+//   res.sendFile(__dirname + '/public/' + req.url + '.css');
+// });
 
 app.listen(4000, () => {
   console.log('listener is listening on port 4000');
