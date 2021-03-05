@@ -1,0 +1,84 @@
+.find-service{
+    article {
+        h2{
+        font-size: 2.5rem;
+        line-height: 1.3;
+        }
+        h5{
+            color:$primary-color;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            color: $text-color;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+    }
+}
+.our-product{
+    background-color: $solution-bg-color;
+    h2{
+        margin-bottom: 1rem;
+    }
+    .row-1{
+        margin-top: 4rem;
+        
+    }
+    .hr-line{
+        height: 0.1rem;
+        background: $text-color;
+        width: 100%;
+        margin: 3rem 0;
+    }
+    article{
+        div{
+            width: 30%;
+        }
+        h3{
+            margin: 1rem 0;
+            font-size:1.5rem;
+        }
+    }
+}
+
+.best-deals{
+    background-color: $primary-color;
+    .btn{
+        @include btn;
+        border: 1px solid white;
+        color: white;
+        &:hover{
+            background-color: white;
+            color: $primary-color;
+            border: 1px solid black;
+        }
+    }
+    article {
+        div{
+            div{
+               height: 1.5rem;
+               background-color: white;
+               width: 1px;
+               margin: 0 1.5rem;
+            }
+        }
+        h3{
+            font-size: 1.5rem;
+            font-weight: 500px;
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    }
+}
+.award {
+    article{
+        margin-top: 5rem;
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
