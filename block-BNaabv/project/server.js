@@ -1,10 +1,17 @@
 const express = require('express');
 const app = express();
 const logger = require('morgan');
+const cookieParser = require('cookie-parser');
 
 app.use(logger('tiny'));
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use((req, res, next) => {
+  res.cookie('username', 'rombo');
+  next();
+});
 
 app.use('/admin', (req, res, next) => {
   next('uncaught error');
@@ -21,6 +28,7 @@ app.get('/about', (req, res) => {
 app.post('/form', (req, res) => {
   res.json(req.body);
 });
+
 app.post('/json', (req, res) => {
   res.send(req.body);
 });
