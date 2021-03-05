@@ -1,0 +1,249 @@
+
+.nav li {
+    margin-left: 2rem;
+}
+header{
+    section:first-child{
+        padding: 0.5rem 0;
+        background-color: $primary-color;
+        ul a{
+            color: white;
+            font-size: 1.5rem;
+        }
+        .container div div:last-child{
+            margin-left:2rem;
+        }
+        .number span, .email a span{
+            margin-left: 0.5rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .number i, .email i {
+            font-size: 1.2rem;
+            color: white;
+        } 
+    }
+    section:last-child{
+        
+        background-color: $header-color;
+        .brand{
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+        .brand h2 .active{
+            color: $active-color;
+        }
+        .brand h2{
+            color: black;
+        }
+        .nav li{
+            margin-left: 1rem;
+            font-size: 1.25rem;
+        }
+        ul li a{
+            color: $link-text-color;
+            font-weight: 700;
+            display: inline-block;
+            padding: 2rem 1rem;
+        }
+        ul li span{
+            margin-left: 1rem;
+        }
+        ul li:hover{
+            background-color: $active-color;
+            a{
+                color: white;
+            }
+        }
+        .sub-nav{
+            display: none;
+        }
+        .sub-nav li{
+            margin: 0;
+        }
+        .sub-menu:hover .sub-nav{
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            background-color: $header-color;
+            margin-top: 5rem;
+            transform: translateX(-1%);
+            left: 0;
+            padding: 1.5rem;
+            width: 15rem;
+            border-radius: 0.25rem;
+            li{
+                padding: 0.5rem;
+                border-radius: 0.25rem;
+                a{
+                    color: $text-color;
+                    padding: 0.5rem 0;
+                }
+            }
+            li:hover{
+                a{
+                color: white;
+                }
+            }
+        }
+    }
+    
+}
+
+.hero{
+    background: url(./media/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15rem 0;
+    h1{
+        font-size: 4.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+        
+    }
+    p{
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .btn{
+        @include btn;
+        background-color: $primary-color;
+        color: white;
+        &:hover{
+            background-color: white;
+            color: $primary-color;
+        }
+    }
+}
+
+.service {
+    h2{
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        text-align: center;
+        
+    }
+    .container div{
+        margin-top: 4rem;
+    }
+    article{
+        border: 2px solid rgba($text-color, 0.5);
+        border-radius: 0.55rem;
+        padding: 1rem;
+        h3{
+            margin:1.5rem 0 0.5rem 0;
+        }
+        .btn{
+            @include btn;
+            color: $primary-color;
+            margin: 1.5rem 0;
+            &:hover{
+                background: $primary-color;
+                color: white;
+            }
+        }
+    }
+
+}
+.solutions {
+    background-color: $solution-bg-color;
+    p{
+        margin: 2rem 0;
+    }
+    .btn {
+        @include btn;
+        color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+
+}
+#home main section:nth-child(4) {
+    p{
+        margin: 1.5rem 0;
+    }
+    .btn {
+        @include btn;
+        color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+    img{
+        border-radius: 0.25rem;
+    }
+    
+}
+.qutoes{
+    background-color: $primary-color;
+    h4{
+        font-size: 1.8rem;
+        color: white;
+        font-weight: 600;
+    }
+    p{
+        color: white;
+        font-weight: 400;
+    }
+    .btn {
+        @include btn;
+        border: 1px solid #fff;
+        color:white;
+        padding: 0.7rem 3rem;
+        &:hover{
+            background-color: white;
+            color: $primary-color;
+        }
+    }
+}
+.leader-sec {
+    padding-top: 4rem;
+    p{
+        margin-top: 2.5rem;
+    }
+}
+.client-sec{
+    background-color: $solution-bg-color;
+    ul{
+        margin-top: 2rem;
+    }
+    ul li{
+        flex: 0 1 10%;
+    }
+    img {
+        filter: grayscale(500%);
+    }
+}
+
+footer{
+    background-color: $footer-color;
+    color: $text-color;
+    a{
+        color: $text-color;
+    }
+    h3{
+        margin-bottom: 1.5rem;
+    }
+    ul li{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    section div:nth-child(3) >ul li {
+        margin: 0.5rem;
+    }
+    .container > div:last-child {
+        margin-top: 3rem;
+        p span{
+            color:$light-gray;
+        }
+    }
+}
+
+// sun menu

@@ -1,0 +1,134 @@
+@import "./variable";
+@import "./reset";
+@import "./general";
+@import "./home";
+@import "./about";
+@import "./service";
+@import "./price";
+@import "./page";
+@import "./contact";
+
+
+
+// responsive layout
+
+.toggle-lable, .toggle{
+    display:none;
+}
+
+@media screen and (max-width:1200px){
+    html{
+        font-size: 12px;
+    }
+    .container{
+        max-width: 1180px;
+    }
+} 
+
+@media screen and (max-width:786px){
+    html{
+        font-size: 12px;
+    }
+    .container{
+        max-width: 775px;
+    }
+    .res-flex-column{
+        flex-direction: column;
+    }
+    .res-align-center{
+        align-items: center;
+    }
+    .res-justify-center{
+        justify-content: center;
+    }
+    .res-flex-100{
+        flex: 100%;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .res-flex-wrap{
+        flex-wrap: wrap;
+    }
+    .our-product article div{
+        width: 20%;
+    }
+    .flex-30,.flex-32,.flex-46,.flex-25,.flex-70,.flex-44, .flex-22,.flex-36,.flex-20,.flex-48{
+        flex: 0 1 100%;
+        margin-bottom: 1rem;
+    }
+    .img{
+        max-width: 100%;
+        height: auto;
+    }
+    header {
+        section:last-child .nav li {
+            padding: 0.5rem 0;
+            margin: 0;
+            li:hover{
+                background-color:transparent;
+            }
+        }
+
+        .header-sec-2{
+            padding: 1.5rem 0;
+            .brand{
+                z-index: 900;
+            }
+         .nav{
+            display: none;
+        }
+        .toggle-lable{
+            display: block;
+            background-color: $primary-color;
+            font-size: 2rem;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            z-index: 900;
+        }
+
+        .toggle:checked~ .nav{
+            display: flex;
+        }
+        .nav{
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            padding-top: 17rem; 
+            color: white;
+            background-color: rgba(40, 62, 125, 0.9);
+        }
+        .nav {
+            li{
+                padding: 0;
+                margin: 0;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+    .hero{
+        background-position: 70%;
+    }
+    .best-deals{
+        article{
+            margin-bottom: 1.5rem;
+        }
+    }
+    footer {
+        .flex-20{
+            flex: 0 1 50%;
+        }
+    }
+}

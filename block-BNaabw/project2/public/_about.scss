@@ -1,0 +1,67 @@
+.about-hero{
+    background-color: $primary-color;
+    color: white;
+    h2{
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+#about .solutions{
+    background-color: white;
+}
+
+.leader-sec {
+    h5{
+        color: $primary-color;
+        font-size:2rem ;
+    }
+}
+.mission article ul{
+    li i{
+        font-size:3rem;
+        margin-right: 1.5rem;
+    }
+    li h5{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    li p{
+        color: $text-color;
+    }
+}
+.team {
+    background-color: $solution-bg-color;
+    p{
+        font-size: 1.5rem;
+    }
+    .card{
+        margin-top: 4rem;
+    }
+    article{
+        background-color: white;
+        border-radius: 0.35rem;
+        h3{
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        p{
+            color: $primary-color;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+
+        }
+    }
+}
+#about .solutions {
+    .btn {
+        background-color: $primary-color;
+        color: white;
+        &:hover{
+            background-color: white;
+            color:$primary-color;
+        }
+    }
+} 
