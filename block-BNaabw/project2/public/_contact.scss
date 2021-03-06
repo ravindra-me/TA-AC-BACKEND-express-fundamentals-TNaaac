@@ -1,0 +1,49 @@
+#contact{
+    section:nth-child(2){
+        background-color: $solution-bg-color;
+        h2{
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        i{
+            background-color: white;
+        }
+    }
+}
+
+.contact {
+
+    p{
+        margin: 1rem 0;
+        color: $text-color;
+        font-size: 1.25rem;
+    }
+    form{
+
+        input{
+            display: flex;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+        }
+        textarea{
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        .btn{
+            @include btn;
+            background-color: $primary-color;
+            color: white;
+            margin-top: 1rem;
+            &:hover{
+                background-color: white;
+                color:$primary-color;
+            }
+        }
+    }
+}

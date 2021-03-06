@@ -1,0 +1,25 @@
+.not-found{
+    .container {
+        div{
+            margin-top: 4rem;
+        }
+    }
+    article{
+        i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5rem;
+            height: 5rem;
+            color: $primary-color;
+            font-size: 2rem;
+            border-radius: 50%;
+            background-color: $solution-bg-color;
+        }
+        h6{
+            font-size: 1.25rem;
+            margin: 1.5rem 0;
+            font-weight: 600;
+        }
+    }
+}
